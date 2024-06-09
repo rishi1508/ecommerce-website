@@ -1,0 +1,217 @@
+body {
+  font-family: "Trebuchet MS", sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+.shop_by_category .card {
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.shop_by_category .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.shop_by_category h5 {
+  font-size: 1.25rem;
+  color: #333;
+}
+
+.shop_by_category .text-center.mt-3 {
+  margin-top: 15px;
+}
+
+.feature-card {
+  background-color: #fff;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.feature-icon {
+  color: #007bff;
+}
+
+.feature-card h3 {
+  color: #333;
+}
+
+.feature-card p {
+  color: #777;
+}
+
+.section_title h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.text-white {
+  color: #333 !important;
+}
+
+@media (max-width: 767px) {
+  .mt-small-5 {
+    margin-top: 3rem;
+  }
+  .mb-small-5 {
+    margin-bottom: 3rem;
+  }
+}
+
+.single_product {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.single_product:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.product_img {
+  position: relative;
+  height: 70%;
+}
+
+.product_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.new_product {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.product-caption {
+  padding: 15px;
+}
+
+.product-ratting i {
+  color: #ffcc00; /* Gold color for the stars */
+}
+
+.price span {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+/* Footer Styling */
+.footer_section {
+  background-color: #343a40;
+  color: #f8f9fa;
+}
+
+.footer_section .footer_title h3 {
+  color: #f8f9fa;
+}
+
+.footer_section .footer_links ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer_section .footer_links ul li {
+  margin-bottom: 10px;
+}
+
+.footer_section .footer_links ul li a {
+  color: #adb5bd;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer_section .footer_links ul li a:hover {
+  color: #f8f9fa;
+}
+
+.footer_section .footer_text {
+  margin-top: 15px;
+}
+
+.footer_section .border-top {
+  border-top: 1px solid #495057;
+  margin-top: 20px;
+  padding-top: 15px;
+}
+
+.footer_section h6 {
+  color: #adb5bd;
+  margin-bottom: 0;
+}
+
+/* Scroll to Top Button Styling */
+#button {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  border: none;
+  outline: none;
+  background-color: #5e5555;
+  color: white;
+  cursor: pointer;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 18px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+#button:hover {
+  background-color: #bd2130;
+  transform: translateY(-5px);
+}
+
+#button.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+#button.hide {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(50px); /* Adjust this value based on your design */
+  transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+}
+
+#button i {
+  line-height: 50px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.backtop a {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(100%);
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+}
+
+.backtop a.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
